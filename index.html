@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFFCF6">
+  <meta name="description" content="2026 北海道五日繪本旅行：航班、每日行程、住宿與出發待辦，一頁帶著走。">
+  <title>北海道秋日小旅行・五天完整行程 | 2026.11.03—11.07</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper:#FFFCF6; --ink:#3E3A39; --coral:#F2A497; --yellow:#F6D27A;
+      --blue:#A8D3E6; --green:#B9DAA5; --white:#FFFDFC; --line:3px solid var(--ink);
+      --shadow:5px 6px 0 var(--ink); --round:28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:108px; }
+    body { margin:0; padding-top:76px; color:var(--ink); background:var(--paper); font-family:'Huninn','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif; line-height:1.65; font-weight:400; }
+    button, input, a { font:inherit; } a { color:inherit; } button { cursor:pointer; }
+    button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible { outline:3px dashed #bf5d50; outline-offset:5px; }
+    img,svg { max-width:100%; }
+    .wrap { max-width:1100px; margin:0 auto; padding:0 22px; }
+    .site-header { position:fixed; top:0; left:0; right:0; height:76px; z-index:100; background:var(--paper); border-bottom:var(--line); }
+    .header-inner { max-width:1160px; margin:auto; height:100%; padding:0 20px; display:flex; align-items:center; gap:18px; }
+    .logo { font-size:16px; font-weight:bold; text-decoration:none; white-space:nowrap; display:flex; align-items:center; gap:10px; letter-spacing:.03em; }
+    .logo-mark { width:38px; height:38px; background:var(--yellow); border:var(--line); border-radius:14px; display:grid; place-items:center; flex-shrink:0; transform:rotate(-7deg); }
+    .logo-mark svg { width:24px; height:24px; }
+    .header-nav { margin-left:auto; display:flex; align-items:center; gap:6px; white-space:nowrap; overflow-x:auto; scrollbar-width:none; }
+    .header-nav::-webkit-scrollbar { display:none; }
+    .header-nav a { text-decoration:none; font-size:13px; font-weight:bold; padding:7px 12px; border:2px solid transparent; border-radius:999px; transition:background .2s,border-color .2s; }
+    .header-nav a:hover, .header-nav a:focus-visible { background:var(--yellow); border-color:var(--ink); }
+    .header-nav .nav-special { background:var(--green); border:2px solid var(--ink); }
+    .section { padding:68px 0 0; }
+    .eyebrow { display:flex; align-items:center; gap:10px; font-size:12px; letter-spacing:.13em; font-weight:bold; text-transform:uppercase; margin:0 0 10px; }
+    .eyebrow::before { content:''; display:inline-block; width:28px; height:3px; border-radius:99px; background:var(--ink); }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font-size:clamp(38px,5.6vw,70px); line-height:1.26; letter-spacing:.025em; margin:0 0 20px; font-weight:bold; }
+    h2 { font-size:clamp(27px,3.4vw,41px); line-height:1.3; margin:0; letter-spacing:.015em; }
+    h3 { line-height:1.3; }
+    .muted { color:#706862; }
+    .section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:14px; margin-bottom:27px; }
+    .section-head p:last-child { margin-bottom:0; }
+    .section-intro { font-size:13px; max-width:360px; }
+    .pill { display:inline-flex; align-items:center; gap:6px; border:2px solid var(--ink); background:var(--white); border-radius:999px; padding:5px 12px; font-size:12px; font-weight:bold; line-height:1.4; }
+    .tag-pink { background:var(--coral); } .tag-yellow { background:var(--yellow); } .tag-blue { background:var(--blue); } .tag-green { background:var(--green); }
+    .hero { padding-top:42px; }
+    .hero-shell { display:grid; grid-template-columns:.95fr 1.05fr; gap:32px; align-items:center; }
+    .hero-copy { padding:22px 0; }
+    .hero-copy .kicker { display:inline-flex; align-items:center; gap:8px; background:var(--green); padding:7px 13px; border:var(--line); border-radius:999px; font-size:12px; font-weight:bold; margin-bottom:25px; transform:rotate(-2deg); }
+    .hero-copy h1 span { background:var(--yellow); box-shadow:0 -5px 0 var(--yellow) inset; border-radius:5px; }
+    .hero-desc { font-size:15px; color:#625b55; max-width:390px; margin-bottom:22px; }
+    .trip-meta { display:flex; gap:10px; flex-wrap:wrap; align-items:center; font-weight:bold; margin-bottom:24px; }
+    .trip-meta span { display:inline-flex; gap:7px; align-items:center; font-size:13px; }
+    .meta-dot { width:7px; height:7px; border:2px solid var(--ink); background:var(--coral); border-radius:50%; }
+    .countdown { border:var(--line); border-radius:25px; background:var(--white); box-shadow:4px 5px 0 var(--ink); max-width:380px; overflow:hidden; }
+    .countdown-top { background:var(--yellow); border-bottom:var(--line); padding:9px 16px; font-size:12px; font-weight:bold; display:flex; justify-content:space-between; gap:8px; }
+    .countdown-row { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; padding:13px 10px 10px; align-items:center; }
+    .countdown-cell { display:flex; align-items:baseline; justify-content:center; gap:3px; min-width:0; }
+    .countdown-cell strong { font-size:clamp(25px,3.2vw,39px); line-height:1.22; letter-spacing:-.04em; font-variant-numeric:tabular-nums; }
+    .countdown-cell span { font-size:12px; font-weight:bold; }
+    .countdown-cell + .countdown-cell { border-left:2px dashed #D7C9B6; }
+    .countdown-tip { font-size:11px; color:#655d59; text-align:center; padding:0 9px 11px; }
+    .countdown-fallback { display:block; font-size:10px; color:#766c63; margin-top:2px; }
+    .countdown-row.is-message { grid-template-columns:1fr; text-align:center; padding:17px 12px; font-weight:bold; font-size:19px; }
+    @media (max-width:370px) { .countdown-cell strong { font-size:24px; } .countdown-row { padding-left:6px; padding-right:6px; } }
+
+    .count-big { font-size:clamp(34px,5vw,53px); line-height:1.1; font-weight:bold; font-variant-numeric:tabular-nums; }
+    .count-unit { font-size:15px; font-weight:bold; }
+    .count-sub { font-size:12px; color:#655d59; }
+    .hero-art { position:relative; border:var(--line); border-radius:38px; background:var(--blue); overflow:hidden; box-shadow:7px 8px 0 var(--ink); isolation:isolate; aspect-ratio:1.08/1; }
+    .hero-art svg { width:100%; height:100%; display:block; }
+    .hero-sticker { position:absolute; top:17px; left:17px; z-index:3; background:var(--paper); border:var(--line); border-radius:17px; font-size:13px; font-weight:bold; padding:8px 12px; transform:rotate(-7deg); line-height:1.4; }
+    .hero-art .float-plane { transform-origin:center; animation:glide 5s ease-in-out infinite; }
+    .hero-art .float-cloud { animation:float 5s ease-in-out infinite; }
+    .hero-art .float-cloud.cloud-2 { animation-delay:-2s; }
+    .hero-art .swing-cable { transform-origin:314px 129px; animation:sway 4s ease-in-out infinite; }
+    .hero-art .drift-leaf { animation:leaf 6s ease-in-out infinite; transform-origin:center; }
+    .hero-art .drift-leaf.second { animation-delay:-3s; }
+    @keyframes float { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-7px) } }
+    @keyframes glide { 0%,100% { transform:translate(0,0) } 50% { transform:translate(9px,-5px) } }
+    @keyframes sway { 0%,100% { transform:rotate(-3deg) } 50% { transform:rotate(4deg) } }
+    @keyframes leaf { 0%,100% { transform:translate(0,0) rotate(-4deg) } 50% { transform:translate(4px,8px) rotate(8deg) } }
+    .quick-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:37px; }
+    .quick-card { display:flex; align-items:center; gap:12px; padding:15px 18px; border:var(--line); border-radius:21px; min-height:84px; }
+    .quick-card:nth-child(1) { background:#F8DFD8; } .quick-card:nth-child(2) { background:#FDE9AB; } .quick-card:nth-child(3) { background:#DCEBCE; }
+    .quick-icon { font-size:27px; line-height:1; }
+    .quick-card small { display:block; font-size:12px; margin-bottom:1px; }
+    .quick-card strong { display:block; font-size:15px; line-height:1.4; }
+    .card { border:var(--line); border-radius:var(--round); background:var(--white); box-shadow:var(--shadow); }
+    .flight-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .flight-card { overflow:hidden; }
+    .flight-header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:16px 19px; border-bottom:var(--line); font-size:13px; font-weight:bold; }
+    .flight-card:nth-child(1) .flight-header { background:var(--coral); } .flight-card:nth-child(2) .flight-header { background:var(--blue); }
+    .flight-number { border:2px solid var(--ink); border-radius:999px; padding:3px 12px; background:var(--white); font-size:13px; }
+    .flight-body { padding:25px 23px 22px; }
+    .flight-route { display:grid; grid-template-columns:1fr 76px 1fr; gap:8px; align-items:center; }
+    .flight-place:last-child { text-align:right; }
+    .airport-time { font-size:clamp(25px,3.5vw,37px); line-height:1.1; font-weight:bold; letter-spacing:.02em; font-variant-numeric:tabular-nums; }
+    .airport-code { font-size:17px; font-weight:bold; margin-top:8px; }
+    .airport-name { font-size:12px; color:#655d59; margin-top:2px; }
+    .flight-route-mid { position:relative; text-align:center; }
+    .flight-route-mid::before { content:""; display:block; position:absolute; width:100%; top:50%; border-top:3px dashed var(--ink); z-index:0; }
+    .flight-route-mid svg { width:37px; height:37px; background:var(--white); padding:3px; position:relative; z-index:1; transform:rotate(10deg); }
+    .flight-bottom { border-top:2px dashed #b4ada7; margin-top:20px; padding-top:12px; font-size:12px; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; }
+    .soft-note { background:#FFF2D7; border:2px solid var(--ink); border-radius:17px; padding:12px 15px; margin-top:21px; font-size:12px; }
+    .soft-note strong { font-weight:bold; }
+    .day-tabs { display:flex; gap:10px; overflow-x:auto; padding:5px 2px 13px; scrollbar-width:thin; }
+    .day-tab { flex:1 0 120px; min-width:115px; border:var(--line); border-radius:19px; background:var(--white); padding:13px 8px; display:flex; flex-direction:column; align-items:center; gap:0; line-height:1.35; box-shadow:3px 4px 0 var(--ink); transition:transform .18s ease,background .18s ease; }
+    .day-tab .day-num { font-size:12px; font-weight:bold; letter-spacing:.12em; }
+    .day-tab .date-num { font-size:22px; font-weight:bold; }
+    .day-tab .weekday { font-size:12px; }
+    .day-tab[aria-selected="true"] { background:var(--yellow); transform:translateY(-5px); }
+    .day-tab:hover { transform:translateY(-3px); }
+    .day-tab[aria-selected="true"]:hover { transform:translateY(-5px); }
+    .day-panel { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(255px,.82fr); gap:20px; margin-top:12px; align-items:start; }
+    .day-main { overflow:hidden; }
+    .day-intro { display:grid; grid-template-columns:1fr minmax(150px,.72fr); gap:18px; align-items:center; min-height:218px; padding:24px; background:#F9E6DF; border-bottom:var(--line); }
+    .day-intro h3 { font-size:clamp(22px,2.6vw,31px); margin:7px 0 10px; }
+    .day-intro p { margin:0; font-size:13px; max-width:440px; }
+    .day-art { height:170px; }
+    .day-art svg { width:100%; height:100%; overflow:visible; }
+    .timeline { margin:0; padding:29px 24px 18px 32px; list-style:none; }
+    .timeline-item { display:grid; grid-template-columns:38px minmax(0,1fr); gap:13px; position:relative; padding-bottom:27px; }
+    .timeline-item:not(:last-child)::before { content:""; position:absolute; width:3px; background:var(--ink); top:34px; bottom:-2px; left:17px; }
+    .timeline-marker { display:grid; place-items:center; width:36px; height:36px; border:3px solid var(--ink); border-radius:50%; background:var(--green); font-size:12px; font-weight:bold; position:relative; z-index:1; }
+    .timeline-item:nth-child(4n+2) .timeline-marker { background:var(--yellow); }
+    .timeline-item:nth-child(4n+3) .timeline-marker { background:var(--blue); }
+    .timeline-item:nth-child(4n+4) .timeline-marker { background:var(--coral); }
+    .timeline-item h4 { font-size:17px; line-height:1.4; margin:4px 0 6px; }
+    .timeline-item p { font-size:13px; color:#625e59; margin:5px 0 0; }
+    .timeline-chips { display:flex; flex-wrap:wrap; gap:6px; }
+    .chip { display:inline-block; border:1.7px solid var(--ink); border-radius:999px; padding:1px 8px; font-size:11px; line-height:1.7; font-weight:bold; }
+    .must { background:var(--coral); } .kind { background:var(--blue); } .travel { background:var(--green); } .clock { background:var(--yellow); }
+    .day-side { display:flex; flex-direction:column; gap:18px; }
+    .side-card { overflow:hidden; }
+    .side-head { padding:13px 18px; border-bottom:var(--line); background:var(--green); font-weight:bold; font-size:15px; }
+    .side-head.pink { background:var(--coral); } .side-head.blue { background:var(--blue); }
+    .side-body { padding:17px 18px; font-size:13px; }
+    .meal-row { display:flex; padding:7px 0; gap:12px; border-bottom:1px dashed #cabfb4; }
+    .meal-row:last-child { border:0; }
+    .meal-row b { flex:0 0 30px; }
+    .lodging-short { font-weight:bold; font-size:16px; margin:0 0 8px; }
+    .more-link { font-size:12px; font-weight:bold; text-decoration-thickness:2px; text-underline-offset:4px; }
+    .attention-list { padding:0; list-style:none; margin:0; }
+    .attention-list li { padding:0 0 10px 20px; position:relative; }
+    .attention-list li:last-child { padding-bottom:0; }
+    .attention-list li::before { content:'✿'; position:absolute; left:0; color:#bb776c; }
+    .day-foot { margin-top:17px; text-align:center; font-size:12px; color:#736a63; }
+    .check-layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(250px,.78fr); gap:20px; }
+    .check-card { padding:23px 24px 24px; }
+    .check-header { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:13px; }
+    .check-header h3 { font-size:19px; margin:0; }
+    .reset-button { border:2px solid var(--ink); background:var(--white); border-radius:999px; padding:4px 13px; font-size:12px; font-weight:bold; }
+    .progress-label { display:flex; justify-content:space-between; font-size:12px; margin-bottom:6px; }
+    .progress-track { height:15px; border:2px solid var(--ink); border-radius:999px; overflow:hidden; background:var(--paper); }
+    .progress-fill { height:100%; width:0%; background:var(--green); border-right:2px solid var(--ink); transition:width .3s ease; }
+    .check-group { margin-top:24px; }
+    .check-group-name { display:flex; align-items:center; gap:8px; font-size:13px; font-weight:bold; margin-bottom:9px; }
+    .check-group-name .small-circ { width:14px; height:14px; border:2px solid var(--ink); border-radius:50%; background:var(--yellow); }
+    .check-list { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+    .check-item { display:flex; align-items:center; gap:9px; border:2px solid var(--ink); border-radius:14px; background:var(--paper); padding:9px 12px; font-size:13px; cursor:pointer; min-height:45px; transition:background .2s; }
+    .check-item:has(input:checked) { background:#DFEED2; }
+    .check-item span { flex:1; }
+    .check-item input { flex:0 0 19px; width:19px; height:19px; margin:0; accent-color:#5b8a57; cursor:pointer; }
+    .check-item input:checked + span { text-decoration:line-through; text-decoration-thickness:2px; color:#736c66; }
+    /* 自己新增的待辦：延續粗線、平塗與圓角的繪本風格 */
+    .custom-check-group { border-top:2px dashed #C8BDB2; padding-top:19px; }
+    .custom-check-group .small-circ { background:var(--coral); }
+    .custom-check-row { display:flex; align-items:stretch; gap:5px; min-width:0; }
+    .custom-check-row .check-item { min-width:0; flex:1; }
+    .custom-check-row .check-item span { overflow-wrap:anywhere; }
+    .custom-remove { flex:0 0 34px; border:2px solid var(--ink); border-radius:12px; background:#F9E6DF; font-size:18px; line-height:1; display:grid; place-items:center; padding:0; }
+    .custom-remove:hover { background:var(--coral); }
+    .custom-empty { margin:0; border:2px dashed #C8BDB2; border-radius:14px; padding:10px 12px; font-size:12px; color:#786F69; }
+    .todo-adder { margin-top:23px; border:2px solid var(--ink); border-radius:20px; background:#EAF2E1; padding:15px; }
+    .todo-adder-title { display:flex; align-items:center; gap:7px; font-size:15px; font-weight:bold; margin:0 0 9px; }
+    .todo-adder-form { display:flex; gap:9px; }
+    .todo-input { min-width:0; width:100%; flex:1; background:var(--white); color:var(--ink); border:2px solid var(--ink); border-radius:14px; padding:11px 12px; font-size:14px; }
+    .todo-input::placeholder { color:#81766D; }
+    .todo-add-button { flex:0 0 auto; background:var(--yellow); border:2px solid var(--ink); border-radius:14px; font-size:14px; font-weight:bold; padding:10px 15px; box-shadow:2px 3px 0 var(--ink); }
+    .todo-add-button:active { transform:translate(1px,2px); box-shadow:1px 1px 0 var(--ink); }
+    .todo-helper { font-size:11px; color:#655D59; margin:9px 0 0; }
+    .todo-feedback { font-size:12px; font-weight:bold; margin:6px 0 0; min-height:0; }
+    .todo-feedback:empty { display:none; }
+    @media (max-width:440px) {
+      .todo-adder-form { gap:7px; }
+      .todo-add-button { padding:10px 12px; }
+    }
+
+    .reminder-card { border:var(--line); border-radius:var(--round); background:var(--yellow); padding:22px; box-shadow:var(--shadow); display:flex; flex-direction:column; }
+    .reminder-card h3 { font-size:23px; margin:7px 0; }
+    .reminder-card p { font-size:13px; }
+    .reminder-card svg { width:100%; max-width:280px; height:auto; align-self:center; margin-top:auto; }
+    .hotel-grid { display:grid; grid-template-columns:1fr 1fr; gap:19px; }
+    .hotel-card { padding:21px; position:relative; overflow:hidden; }
+    .hotel-top { display:flex; align-items:center; gap:13px; margin-bottom:13px; }
+    .hotel-day { min-width:67px; text-align:center; border:2px solid var(--ink); border-radius:12px; background:var(--yellow); font-size:14px; font-weight:bold; padding:7px; line-height:1.3; }
+    .hotel-card:nth-child(2) .hotel-day { background:var(--green); } .hotel-card:nth-child(3) .hotel-day { background:var(--coral); } .hotel-card:nth-child(4) .hotel-day { background:var(--blue); }
+    .hotel-name { font-size:18px; font-weight:bold; line-height:1.4; margin:0; }
+    .hotel-en { font-size:11px; color:#756e68; margin:3px 0 0; }
+    .hotel-info { font-size:13px; margin:15px 0; padding-top:12px; border-top:2px dashed #cfc2b5; }
+    .hotel-info div { display:flex; gap:9px; margin-bottom:6px; }
+    .hotel-info b { flex:0 0 40px; }
+    .hotel-info span { overflow-wrap:anywhere; }
+    .hotel-actions { display:flex; flex-wrap:wrap; gap:8px; }
+    .button-link { display:inline-flex; justify-content:center; gap:6px; align-items:center; border:2px solid var(--ink); padding:7px 14px; font-size:12px; font-weight:bold; text-decoration:none; border-radius:999px; background:var(--paper); }
+    .button-link:hover { background:var(--green); }
+    .notice-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:17px; }
+    .notice-card { padding:19px 20px; border:var(--line); border-radius:23px; background:var(--white); }
+    .notice-card:nth-child(1) { background:#F8E5DF; } .notice-card:nth-child(2) { background:#E2F0DB; } .notice-card:nth-child(3) { background:#E5F1F8; }
+    .notice-card h3 { font-size:16px; margin:6px 0 7px; }
+    .notice-card p { font-size:12px; margin:0; }
+    .notice-icon { font-size:23px; }
+    .contact { margin-top:27px; padding:22px 25px; border:var(--line); border-radius:24px; background:var(--yellow); display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; }
+    .contact h3 { font-size:18px; margin:0 0 2px; }
+    .contact p { font-size:12px; margin:0; }
+    .contact-links { display:flex; flex-wrap:wrap; gap:8px; }
+    .contact-links a { background:var(--white); border:2px solid var(--ink); border-radius:999px; padding:7px 12px; text-decoration:none; font-weight:bold; font-size:12px; }
+    footer { text-align:center; padding:65px 20px 25px; font-size:12px; color:#6b625b; }
+    .footer-leaf { font-size:24px; display:block; margin-bottom:6px; }
+    .pop { animation:pop .32s cubic-bezier(.2,1.4,.4,1); }
+    @keyframes pop { 0% { opacity:.6; transform:translateY(7px) scale(.982) } 70% { transform:translateY(-2px) scale(1.006); opacity:1 } 100% { transform:translate(0) scale(1); } }
+    @media (max-width:830px) {
+      .hero-shell { gap:19px; }
+      .day-panel { grid-template-columns:minmax(0,1fr); }
+      .day-side { display:grid; grid-template-columns:repeat(3,1fr); }
+      .side-body { padding:15px; }
+      .quick-card { padding:13px; }
+      .quick-card strong { font-size:13px; }
+    }
+    @media (max-width:660px) {
+      body { padding-top:66px; }
+      .site-header { height:66px; }
+      .header-inner { padding:0 9px; gap:5px; }
+      .logo { font-size:12px; gap:6px; }
+      .logo-mark { width:30px; height:30px; border-radius:11px; }
+      .logo-mark svg { width:18px; height:18px; }
+      .header-nav { gap:0; }
+      .header-nav a { font-size:10.5px; padding:7px 7px; }
+      .header-nav .nav-special { border-width:1.5px; }
+      .wrap { padding:0 17px; }
+      .hero { padding-top:22px; }
+      .hero-shell { grid-template-columns:1fr; gap:21px; }
+      .hero-copy { padding:0; }
+      .hero-copy h1 { font-size:46px; margin-bottom:12px; }
+      .hero-copy .kicker { margin-bottom:15px; }
+      .hero-desc { font-size:14px; margin-bottom:14px; }
+      .countdown { max-width:none; }
+      .hero-art { aspect-ratio:1.23/1; border-radius:30px; }
+      .quick-grid { grid-template-columns:1fr 1fr; gap:9px; margin-top:24px; }
+      .quick-card { min-height:72px; padding:12px; border-radius:16px; }
+      .quick-card:last-child { grid-column:1/-1; min-height:57px; }
+      .quick-icon { font-size:20px; }
+      .section { padding-top:53px; }
+      .section-head { display:block; margin-bottom:18px; }
+      .section-head h2 { margin-bottom:8px; }
+      .flight-grid, .hotel-grid, .check-layout { grid-template-columns:1fr; }
+      .flight-body { padding:22px 19px; }
+      .day-tabs { margin:0 -4px; }
+      .day-tab { flex:0 0 92px; min-width:92px; padding:10px 5px; }
+      .day-tab .date-num { font-size:19px; }
+      .day-intro { grid-template-columns:minmax(0,1fr) 125px; gap:10px; padding:18px; min-height:182px; }
+      .day-intro h3 { font-size:22px; }
+      .day-intro p { font-size:12px; }
+      .day-art { height:132px; }
+      .timeline { padding:23px 16px 10px 19px; }
+      .timeline-item { gap:9px; grid-template-columns:34px minmax(0,1fr); padding-bottom:23px; }
+      .timeline-marker { width:32px; height:32px; }
+      .timeline-item:not(:last-child)::before { left:15px; top:30px; }
+      .timeline-item h4 { font-size:16px; }
+      .day-side { grid-template-columns:1fr; }
+      .check-card { padding:19px 16px; }
+      .reminder-card svg { max-width:260px; }
+      .notice-grid { grid-template-columns:1fr; gap:10px; }
+      .notice-card { padding:15px 18px; }
+      .contact { padding:18px; }
+    }
+    @media (max-width:380px) {
+      .logo span:last-child { display:none; }
+      .header-nav a { padding:7px 7px; }
+      .hero-copy h1 { font-size:41px; }
+      .check-list { grid-template-columns:1fr; }
+      .day-intro { grid-template-columns:1fr 105px; }
+      .day-art { height:118px; }
+      .flight-route { grid-template-columns:1fr 56px 1fr; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; }
+    }
+
+    /* 日期改成 HTML 原生單選鈕：即使預覽器限制 JavaScript 也能切換。 */
+    .itinerary-widget { position:relative; }
+    .day-switch { position:absolute; width:1px; height:1px; margin:0; opacity:0; }
+    .day-tab { cursor:pointer; user-select:none; }
+    .day-sheet { display:none; }
+    #day-switch-1:checked ~ .day-stage #panel-day-1,
+    #day-switch-2:checked ~ .day-stage #panel-day-2,
+    #day-switch-3:checked ~ .day-stage #panel-day-3,
+    #day-switch-4:checked ~ .day-stage #panel-day-4,
+    #day-switch-5:checked ~ .day-stage #panel-day-5 { display:block; animation:pop .32s cubic-bezier(.2,1.4,.4,1); }
+    #day-switch-1:checked ~ .day-tabs label[for="day-switch-1"],
+    #day-switch-2:checked ~ .day-tabs label[for="day-switch-2"],
+    #day-switch-3:checked ~ .day-tabs label[for="day-switch-3"],
+    #day-switch-4:checked ~ .day-tabs label[for="day-switch-4"],
+    #day-switch-5:checked ~ .day-tabs label[for="day-switch-5"] { background:var(--yellow); transform:translateY(-5px); }
+    #day-switch-1:focus-visible ~ .day-tabs label[for="day-switch-1"],
+    #day-switch-2:focus-visible ~ .day-tabs label[for="day-switch-2"],
+    #day-switch-3:focus-visible ~ .day-tabs label[for="day-switch-3"],
+    #day-switch-4:focus-visible ~ .day-tabs label[for="day-switch-4"],
+    #day-switch-5:focus-visible ~ .day-tabs label[for="day-switch-5"] { outline:3px dashed #bf5d50; outline-offset:4px; }
+    .day-count { margin-top:13px; font-size:11px; font-weight:bold; letter-spacing:.015em; }
+    .timeline-text { min-width:0; }
+    .timeline-text h4 { margin-bottom:6px; }
+    .stop-map { display:inline-block; font-size:12px; font-weight:bold; text-underline-offset:4px; margin-top:8px; }
+    .stop-map:hover { color:#9b524b; }
+    @media (prefers-reduced-motion:reduce) { .day-sheet { animation:none !important; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#home" aria-label="回到首頁">
+        <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="#3E3A39" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 25V9M15 17 8 10M15 13l7-7M15 22l8-8"/><path d="M4 26h23"/></svg></span>
+        <span>北海道小旅行</span>
+      </a>
+      <nav class="header-nav" aria-label="網站導覽">
+        <a href="#home">首頁</a>
+        <a href="#flights">航班</a>
+        <a href="#itinerary">每日行程</a>
+        <a href="#checklist">待辦</a>
+        <a href="#hotels" class="nav-special">住宿 ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <div class="kicker">✿ 2026 AUTUMN TRIP · JAPAN</div>
+          <h1 id="hero-title">楓葉掉進<br><span>北海道</span>的五天</h1>
+          <p class="hero-desc">從函館的百萬夜景，到小樽的玻璃小店。搭上纜車、漫步楓葉，收集五天剛剛好的秋日浪漫。</p>
+          <div class="trip-meta"><span>2026.11.03 — 11.07</span><span class="meta-dot" aria-hidden="true"></span><span>5 天 4 夜・函館進出</span></div>
+          <div class="countdown" aria-live="off">
+            <div class="countdown-top"><span>✈ 距離出發集合還有</span><span>11/03（二）06:20</span></div>
+            <div class="countdown-row" id="countdown" role="timer" aria-label="距離出發還有 8 天 9 小時 6 分 46 秒">
+              <div class="countdown-cell"><strong id="count-days">08</strong><span>天</span></div>
+              <div class="countdown-cell"><strong id="count-hours">09</strong><span>時</span></div>
+              <div class="countdown-cell"><strong id="count-minutes">06</strong><span>分</span></div>
+              <div class="countdown-cell"><strong id="count-seconds">46</strong><span>秒</span></div>
+            </div>
+            <div class="countdown-tip" id="count-tip">以台灣時間 11/03 上午 06:20 集合為準<span class="countdown-fallback" id="countdown-fallback">瀏覽器支援 JavaScript 時會顯示即時倒數</span></div>
+            <script>
+              (function () {
+                var box=document.getElementById('countdown');
+                var message=document.getElementById('count-tip');
+                var fallback=document.getElementById('countdown-fallback');
+                var target=Date.parse('2026-11-03T06:20:00+08:00');
+                var finish=Date.parse('2026-11-07T18:55:00+08:00');
+                var ids=['count-days','count-hours','count-minutes','count-seconds'];
+                var nodes=ids.map(function(id) {return document.getElementById(id);});
+                var active=true;
+                function tick() {
+                  if (!active) return;
+                  var current=Date.now();
+                  if (current>=target) {
+                    box.classList.add('is-message');
+                    box.textContent=current<finish?'🍁 北海道旅行進行中！':'♡ 北海道旅行圓滿結束';
+                    message.textContent=current<finish?'祝旅途平安，玩得開心！':'帶著滿滿回憶回家';
+                    active=false;
+                    return;
+                  }
+                  var remaining=Math.ceil((target-current)/1000);
+                  var days=Math.floor(remaining/86400);
+                  remaining=remaining%86400;
+                  var hours=Math.floor(remaining/3600);
+                  remaining=remaining%3600;
+                  var minutes=Math.floor(remaining/60);
+                  var seconds=remaining%60;
+                  [days,hours,minutes,seconds].forEach(function(value,index) {
+                    nodes[index].textContent=String(value).padStart(2,'0');
+                  });
+                  box.setAttribute('aria-label','距離出發集合還有 '+days+' 天 '+hours+' 小時 '+minutes+' 分 '+seconds+' 秒');
+                }
+                if (fallback) fallback.remove();
+                tick();
+                setInterval(tick,1000);
+                document.addEventListener('visibilitychange',function() { if(!document.hidden) tick(); });
+              })();
+            </script>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="手繪北海道插圖：函館山、纜車、五稜郭星形城郭、楓葉、飛機、湖水與小樽紅磚倉庫">
+          <span class="hero-sticker">HELLO<br>HOKKAIDO! ♡</span>
+          <svg viewBox="0 0 500 465" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="500" height="465" fill="#A8D3E6"/>
+            <circle cx="389" cy="78" r="46" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+            <g class="float-cloud" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><path d="M116 105c-14-21-51-14-54 9-30-3-39 33-12 38h102c22-3 20-31 0-36-9-2-20 0-26 5-3-9-5-11-10-16Z"/></g>
+            <g class="float-cloud cloud-2" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"><path d="M351 156c-5-20-39-21-46-2-21-4-31 22-8 28h75c16-6 10-25-5-26-5-1-9 0-16 0Z"/></g>
+            <g class="float-plane" transform="translate(185 55) rotate(-10)" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><path d="M-38 14 10 1 37-23l12 5L29 9l31 15-4 12-36-13-30 27-10-7 12-27-29 8Z"/><path d="M6 10 34 11" stroke-width="2"/></g>
+            <path d="M-20 282 55 219 118 263 194 184 265 246 354 181 444 255 520 214V466H-20Z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M-16 322 68 281 155 325 255 253 367 328 444 295 522 331V465H-16Z" fill="#8EBF8C" stroke="#3E3A39" stroke-width="3"/>
+            <path d="M-10 358C74 335 122 356 186 365c84 13 128-22 196-12 57 9 95 9 131-2v117H-10Z" fill="#75B8D4" stroke="#3E3A39" stroke-width="3"/>
+            <path d="M-5 403c100-22 141 13 237-6 69-14 137 8 274-4" fill="none" stroke="#FFFCF6" stroke-width="5" stroke-linecap="round"/>
+            <path d="M-1 433c93-18 171 7 252 0 80-7 164-3 257 4" fill="none" stroke="#FFFCF6" stroke-width="3" stroke-linecap="round"/>
+            <!-- red warehouse -->
+            <g transform="translate(28 258)" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round">
+              <path d="M-6 21 49-5l62 26v71H-6Z" fill="#F2A497"/><path d="M-7 21h120" fill="none"/><rect x="11" y="37" width="21" height="31" rx="3" fill="#FFFCF6"/><rect x="46" y="37" width="21" height="31" rx="3" fill="#FFFCF6"/><rect x="81" y="37" width="17" height="31" rx="3" fill="#FFFCF6"/><path d="M-6 79h119" fill="none"/>
+            </g>
+            <!-- star fort -->
+            <g transform="translate(181 331) rotate(-10)" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><path d="M48 -46 65-17 97-11 75 11 81 45 48 30 17 45 23 11 1-11 32-17Z" fill="#F6D27A"/><path d="M48 -27 59-9 77-5 64 9 67 26 48 18 29 26 33 9 20-5 38-9Z" fill="#FFFCF6"/></g>
+            <!-- trees -->
+            <g stroke="#3E3A39" stroke-linejoin="round" stroke-width="3"><path d="M410 326v83"/><path d="M383 334c-25-20-8-46 8-42-3-33 29-42 44-19 23-12 48 18 29 37 22 23-13 50-37 28-12 22-37 15-44-4Z" fill="#F2A497"/><path d="M399 353c-11-16-21-27-28-38m28 38 24-31m-15 13 25-22" fill="none"/><path d="M444 329v64"/><path d="M422 340c-21-14-2-36 12-31 0-29 30-33 40-16 15-6 27 15 16 29 11 16-13 31-33 15-8 13-26 13-35 3Z" fill="#F6D27A"/></g>
+            <!-- cable line and car -->
+            <path d="M226 152 474 90" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/>
+            <g class="swing-cable" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><path d="M314 131v21"/><rect x="285" y="150" width="62" height="44" rx="13" fill="#F6D27A"/><path d="M295 167h42m-20-16v43" fill="none"/><path d="M304 150v-9h20v9" fill="#F6D27A"/></g>
+            <!-- boat -->
+            <g transform="translate(324 385)" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"><path d="M-37 5h92l-17 22H-18Z" fill="#FFFCF6"/><path d="M-9 6v-46l40 46Z" fill="#F6D27A"/><path d="M-8-40v45" fill="none"/></g>
+            <g class="drift-leaf" fill="#F2A497" stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round"><path d="M105 201 96 183l12 4 4-16 8 11 13-8-1 17 14 4-18 7-7 14-10-10-18 6Z"/><path d="m121 201 10 17" fill="none"/></g>
+            <g class="drift-leaf second" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"><path d="M461 196 455 182l9 5 6-11 5 11 11-3-5 14 8 5-14 2-6 10-8-10-13 3Z"/></g>
+          </svg>
+        </div>
+      </div>
+      <div class="quick-grid" aria-label="重要資訊">
+        <div class="quick-card"><span class="quick-icon" aria-hidden="true">📍</span><div><small>集合地點</small><strong>桃園機場第二航廈<br>長榮航空團體櫃台</strong></div></div>
+        <div class="quick-card"><span class="quick-icon" aria-hidden="true">🕡</span><div><small>11 月 3 日（二）</small><strong>上午 06:20 集合</strong></div></div>
+        <div class="quick-card"><span class="quick-icon" aria-hidden="true">🍁</span><div><small>這次的小旅行</small><strong>函館・定山溪・札幌・小樽・洞爺湖</strong></div></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="flights" aria-labelledby="flights-title">
+      <div class="section-head"><div><p class="eyebrow">01 · FLIGHT TICKETS</p><h2 id="flights-title">飛行的小紙票 ✈</h2></div><p class="section-intro muted">航班時刻皆為出發地／抵達地當地時間。日本比台灣快 1 小時。</p></div>
+      <div class="flight-grid">
+        <article class="card flight-card">
+          <div class="flight-header"><span>11 / 03（二） · 去程</span><span class="flight-number">EVA AIR　BR138</span></div>
+          <div class="flight-body">
+            <div class="flight-route"><div class="flight-place"><div class="airport-time">08:50</div><div class="airport-code">TPE</div><div class="airport-name">台灣・桃園</div></div><div class="flight-route-mid"><svg viewBox="0 0 40 40" fill="#F2A497" stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round"><path d="M4 23 16 18 21 4l7 1-1 15 9 5-1 6-12-2-8 8-5-3 3-9-9 2Z"/></svg></div><div class="flight-place"><div class="airport-time">13:30</div><div class="airport-code">HKD</div><div class="airport-name">日本・函館</div></div></div>
+            <div class="flight-bottom"><span>起飛：桃園國際機場</span><span>抵達：函館機場</span></div>
+          </div>
+        </article>
+        <article class="card flight-card">
+          <div class="flight-header"><span>11 / 07（六） · 回程</span><span class="flight-number">EVA AIR　BR137</span></div>
+          <div class="flight-body">
+            <div class="flight-route"><div class="flight-place"><div class="airport-time">15:30</div><div class="airport-code">HKD</div><div class="airport-name">日本・函館</div></div><div class="flight-route-mid"><svg viewBox="0 0 40 40" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2.5" stroke-linejoin="round"><path d="M4 23 16 18 21 4l7 1-1 15 9 5-1 6-12-2-8 8-5-3 3-9-9 2Z"/></svg></div><div class="flight-place"><div class="airport-time">18:55</div><div class="airport-code">TPE</div><div class="airport-name">台灣・桃園</div></div></div>
+            <div class="flight-bottom"><span>起飛：函館機場</span><span>抵達：桃園國際機場</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="soft-note"><strong>小提醒：</strong>說明會資料列出的去程「飛行時間 4h40m」與航班起降時刻、兩地時差換算不一致。此處保留原資料的起降時間，實際時刻與航程請以航空公司／電子機票為準。</div>
+    </section>
+
+    <section class="section wrap" id="itinerary" aria-labelledby="itinerary-title">
+      <div class="section-head"><div><p class="eyebrow">02 · FIVE LITTLE DAYS</p><h2 id="itinerary-title">一天一天，慢慢收藏 🍁</h2></div><p class="section-intro muted">點選日期就能翻頁。只有航班與機場集合有官方時刻，其餘按行程表順序排列，不代表精確時間。</p></div>
+      <div class="itinerary-widget"><input class="day-switch" type="radio" name="travel-day" id="day-switch-1" checked><input class="day-switch" type="radio" name="travel-day" id="day-switch-2" ><input class="day-switch" type="radio" name="travel-day" id="day-switch-3" ><input class="day-switch" type="radio" name="travel-day" id="day-switch-4" ><input class="day-switch" type="radio" name="travel-day" id="day-switch-5" ><div class="day-tabs" role="group" aria-label="選擇每日行程"><label class="day-tab" for="day-switch-1"><span class="day-num">DAY 01</span><span class="date-num">11/03</span><span class="weekday">週二・6 站</span></label><label class="day-tab" for="day-switch-2"><span class="day-num">DAY 02</span><span class="date-num">11/04</span><span class="weekday">週三・7 站</span></label><label class="day-tab" for="day-switch-3"><span class="day-num">DAY 03</span><span class="date-num">11/05</span><span class="weekday">週四・6 站</span></label><label class="day-tab" for="day-switch-4"><span class="day-num">DAY 04</span><span class="date-num">11/06</span><span class="weekday">週五・6 站</span></label><label class="day-tab" for="day-switch-5"><span class="day-num">DAY 05</span><span class="date-num">11/07</span><span class="weekday">週六・5 站</span></label></div><div class="day-stage"><section class="day-sheet" id="panel-day-1" aria-label="第 1 天 11/03 的詳細行程">
+  <div class="day-panel"><article class="card day-main"><div class="day-intro" style="background:#F8DFD8"><div><span class="pill">DAY 01 / 11/03</span><h3>從函館開始的秋日故事</h3><p>飛向北海道，收集紅葉庭園和閃亮亮的百萬夜景。</p><div class="day-count">✿ 本日 6 個行程節點・依旅行社順序排列</div></div><div class="day-art"><svg viewBox="0 0 260 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="214" cy="42" r="24" fill="#F6D27A"/><path d="M3 135 58 80l48 53 41-78 52 79 40-35 27 36v33H3Z" fill="#B9DAA5"/><path d="M0 137q65-18 132 0t130 0v36H0Z" fill="#A8D3E6"/><path d="M20 138v-30h17v30m11 0V88h20v50m7 0v-24h20v24m12 0V99h17v39m11 0v-28h18v28m9 0V98h26v40m9 0v-22h19v22" fill="#F2A497"/><path d="M0 143h260" fill="none"/><path d="M221 68l5 5 8-9" fill="none"/></g></svg></div></div>
+    <ol class="timeline"><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">01</div><div class="timeline-text"><div class="timeline-chips"><span class="chip clock">06:20</span><span class="chip kind">集合</span></div><h4>桃園第二航廈集合</h4><p>長榮航空團體櫃台，與領隊雷于震會合。</p></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">02</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">08:50</span><span class="chip kind">飛機</span></div><h4>搭乘 BR138 飛往函館</h4><p>預定 13:30（日本時間）抵達函館機場。</p></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">03</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 3 站</span><span class="chip kind">團體車輛</span><span class="chip must">✦ 必去</span></div><h4>香雪園・秋日庭園</h4><p>漫步日式園林，欣賞楓葉與古建築。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A6%99%E9%9B%AA%E5%9C%92%20%E5%87%BD%E9%A4%A8" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 香雪園・秋日庭園">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">04</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 4 站</span><span class="chip kind">團體車輛</span><span class="chip must">✦ 必去</span></div><h4>五稜郭城跡</h4><p>星形城郭的歷史散步；行程不包含展望台。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BA%94%E7%A8%9C%E9%83%AD%20%E5%85%AC%E5%9C%92%20%E5%87%BD%E9%A4%A8" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 五稜郭城跡">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">05</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">夜間</span><span class="chip kind">依現場安排</span><span class="chip must">✦ 必去</span></div><h4>函館山百萬夜景</h4><p>俯瞰函館港灣的城市光芒；上山交通依當日安排。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%87%BD%E9%A4%A8%E5%B1%B1%20%E5%B1%95%E6%9C%9B%E5%8F%B0" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 函館山百萬夜景">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">06</div><div class="timeline-text"><div class="timeline-chips"><span class="chip clock">當晚</span><span class="chip kind">住宿</span></div><h4>入住湯之川溫泉・海與燈</h4><p>享受溫泉與飯店晚餐。</p></div></li></ol>
+  </article><aside class="day-side">
+    <div class="card side-card"><div class="side-head">🍡 今日三餐</div><div class="side-body"><div class="meal-row"><b>早</b><span>自行享用</span></div><div class="meal-row"><b>午</b><span>機上精緻套餐</span></div><div class="meal-row"><b>晚</b><span>飯店和洋自助餐</span></div></div></div>
+    <div class="card side-card"><div class="side-head blue">☾ 今晚落腳處</div><div class="side-body"><p class="lodging-short">函館湯之川溫泉・海與燈</p><a class="more-link" href="#hotels">查看住宿地址與電話 ↗</a></div></div>
+    <div class="card side-card"><div class="side-head pink">✿ 當天小筆記</div><div class="side-body"><ul class="attention-list"><li>集合時間 06:20，地點為桃園第二航廈長榮團體櫃台。</li><li>函館山纜車整備期，可能使用其他交通工具上下山。</li></ul></div></div>
+  </aside></div>
+ </section><section class="day-sheet" id="panel-day-2" aria-label="第 2 天 11/04 的詳細行程">
+  <div class="day-panel"><article class="card day-main"><div class="day-intro" style="background:#E7EEDB"><div><span class="pill">DAY 02 / 11/04</span><h3>火山、湖泊與溫泉小鎮</h3><p>紅磚港口、纜車上的湖景，最後走進定山溪。</p><div class="day-count">✿ 本日 7 個行程節點・依旅行社順序排列</div></div><div class="day-art"><svg viewBox="0 0 260 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M0 139 61 81 114 113 171 34 237 126 260 115v57H0Z" fill="#B9DAA5"/><path d="M141 72 171 34l31 55-30-9-15 13Z" fill="#FFFCF6"/><path d="M0 130q53-11 106 6t154-9v45H0Z" fill="#A8D3E6"/><path d="M16 29 241 78" fill="none"/><path d="M110 53v16" fill="none"/><rect x="93" y="68" width="36" height="27" rx="7" fill="#F6D27A"/><path d="M100 82h22m-11-14v27" fill="none"/><path d="M17 143q45-12 72 0" fill="none"/></g></svg></div></div>
+    <ol class="timeline"><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">01</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 1 站</span><span class="chip kind">團體車輛</span></div><h4>金森紅磚倉庫群</h4><p>走進函館港邊明治時期的紅磚倉庫區，外觀保留昔日港口風貌，內有商店與餐飲空間。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%91%E6%A3%AE%E8%B5%A4%E3%83%AC%E3%83%B3%E3%82%AC%E5%80%89%E5%BA%AB%20%E5%87%BD%E9%A4%A8" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 金森紅磚倉庫群">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">02</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 2 站</span><span class="chip kind">纜車</span><span class="chip must">✦ 必去</span></div><h4>有珠山纜車</h4><p>從山麓搭乘纜車上山，沿途與山頂可眺望洞爺湖、昭和新山及火山地形。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%89%E7%8F%A0%E5%B1%B1%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 有珠山纜車">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">03</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 3 站</span><span class="chip kind">團體車輛</span></div><h4>昭和新山</h4><p>參觀 1940 年代因火山活動隆起的山體，欣賞特殊地質地貌。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%98%AD%E5%92%8C%E6%96%B0%E5%B1%B1%20%E5%8C%97%E6%B5%B7%E9%81%93" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 昭和新山">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">04</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 4 站</span><span class="chip kind">團體車輛</span><span class="chip must">✦ 必去</span></div><h4>洞爺湖 SAIRO 展望台</h4><p>從展望台俯瞰洞爺湖、中島及周邊山巒，是當天安排的湖景觀賞地點。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B5%E3%82%A4%E3%83%AD%E5%B1%95%E6%9C%9B%E5%8F%B0%20%E6%B4%9E%E7%88%BA%E6%B9%96" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 洞爺湖 SAIRO 展望台">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">05</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 5 站</span><span class="chip kind">散步</span><span class="chip must">✦ 必去</span></div><h4>定山溪・二見吊橋</h4><p>到札幌近郊的定山溪溫泉區，步行觀賞二見吊橋與溪谷。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BA%8C%E8%A6%8B%E5%90%8A%E6%A9%8B%20%E5%AE%9A%E5%B1%B1%E6%BA%AA" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 定山溪・二見吊橋">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">06</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">視安排</span><span class="chip kind">散步</span><span class="chip clock">★ 待確認</span></div><h4>定山溪神社周邊</h4><p>原行程列「定山溪自然彩燈節～定山溪神社」；但彩燈節在資料上註明 10/31 結束，11/04 是否仍安排步行請詢問領隊。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AE%9A%E5%B1%B1%E6%B8%93%E7%A5%9E%E7%A4%BE" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 定山溪神社周邊">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">07</div><div class="timeline-text"><div class="timeline-chips"><span class="chip clock">當晚</span><span class="chip kind">住宿</span></div><h4>入住定山溪・鹿之湯</h4><p>在溫泉旅館休息、享用自助晚餐。</p></div></li></ol>
+  </article><aside class="day-side">
+    <div class="card side-card"><div class="side-head">🍡 今日三餐</div><div class="side-body"><div class="meal-row"><b>早</b><span>飯店內享用</span></div><div class="meal-row"><b>午</b><span>洞爺帆立貝釜飯＋海鮮鍋物御膳</span></div><div class="meal-row"><b>晚</b><span>飯店和洋自助餐</span></div></div></div>
+    <div class="card side-card"><div class="side-head blue">☾ 今晚落腳處</div><div class="side-body"><p class="lodging-short">定山溪溫泉・鹿之湯</p><a class="more-link" href="#hotels">查看住宿地址與電話 ↗</a></div></div>
+    <div class="card side-card"><div class="side-head pink">✿ 當天小筆記</div><div class="side-body"><ul class="attention-list"><li>資料列有定山溪神社及自然彩燈節，但活動標示於 10/31 結束，是否能參加請再次確認。</li><li>有珠山纜車是否運行，仍以當日天氣與現場安排為準。</li></ul></div></div>
+  </aside></div>
+ </section><section class="day-sheet" id="panel-day-3" aria-label="第 3 天 11/05 的詳細行程">
+  <div class="day-panel"><article class="card day-main"><div class="day-intro" style="background:#FFE9C1"><div><span class="pill">DAY 03 / 11/05</span><h3>楓紅隧道與札幌美食</h3><p>穿過紅葉，逛逛狸小路，再用三大蟹替一天收尾。</p><div class="day-count">✿ 本日 6 個行程節點・依旅行社順序排列</div></div><div class="day-art"><svg viewBox="0 0 260 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M0 143h260v30H0z" fill="#A8D3E6"/><path d="M70 150v-94m105 93V50" fill="none" stroke-width="8"/><path d="M24 83q-16-28 9-40 7-35 40-25 27-27 44 10 28 9 13 36 13 27-25 34-22 20-39 0-31 16-42-15Z" fill="#F2A497"/><path d="M130 71q-14-25 13-39 5-31 37-22 23-24 41 6 30 4 19 31 18 26-16 39-22 22-44 0-30 15-41-15Z" fill="#F6D27A"/><path d="M70 99 42 74m28 13 28-32m77 39-22-31m22 17 25-39" fill="none"/><path d="M70 152q61-38 105 0" fill="none"/></g></svg></div></div>
+    <ol class="timeline"><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">01</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 1 站</span><span class="chip kind">電動小巴</span><span class="chip must">✦ 必去</span></div><h4>豐平峽</h4><p>搭乘來回電動小巴士，走訪水壩及峽谷景觀，觀賞沿途山林秋色。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%8A%E5%B9%B3%E5%B3%A1%E3%83%80%E3%83%A0" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 豐平峽">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">02</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 2 站</span><span class="chip kind">團體車輛</span></div><h4>免稅店</h4><p>可選購紀念品、伴手禮。</p></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">03</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 3 站</span><span class="chip kind">團體車輛</span><span class="chip must">✦ 必去</span></div><h4>平岡樹藝中心</h4><p>漫步楓樹步道，欣賞紅葉隧道。能否看到楓紅仍需視當年天氣而定。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B9%B3%E5%B2%A1%E6%A8%B9%E8%8A%B8%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 平岡樹藝中心">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">04</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 4 站</span><span class="chip kind">散步</span></div><h4>狸小路商店街</h4><p>札幌市中心約一公里長的拱廊商店街，安排購物散策。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%AD%E5%B9%8C%20%E7%8B%B8%E5%B0%8F%E8%B7%AF%E5%95%86%E5%BA%97%E8%A1%97" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 狸小路商店街">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">05</div><div class="timeline-text"><div class="timeline-chips"><span class="chip clock">晚餐</span><span class="chip kind">餐食</span><span class="chip must">✦ 必去</span></div><h4>三大蟹 × 和牛涮涮鍋</h4><p>晚餐安排三大蟹自助餐、和牛涮涮鍋與酒飲，限時約 80 分鐘。</p></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">06</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">當晚</span><span class="chip kind">住宿</span></div><h4>入住札幌 STREAM</h4><p>在札幌市中心休息，迎接隔日小樽之旅。</p></div></li></ol>
+  </article><aside class="day-side">
+    <div class="card side-card"><div class="side-head">🍡 今日三餐</div><div class="side-body"><div class="meal-row"><b>早</b><span>飯店內享用</span></div><div class="meal-row"><b>午</b><span>北海道湯咖哩御膳</span></div><div class="meal-row"><b>晚</b><span>和牛涮涮鍋＋三大蟹自助餐（80 分鐘，含酒飲）</span></div></div></div>
+    <div class="card side-card"><div class="side-head blue">☾ 今晚落腳處</div><div class="side-body"><p class="lodging-short">札幌 STREAM 飯店</p><a class="more-link" href="#hotels">查看住宿地址與電話 ↗</a></div></div>
+    <div class="card side-card"><div class="side-head pink">✿ 當天小筆記</div><div class="side-body"><ul class="attention-list"><li>豐平峽安排來回搭乘電動小巴士。</li><li>餐食與逛街停留時段由領隊安排。</li></ul></div></div>
+  </aside></div>
+ </section><section class="day-sheet" id="panel-day-4" aria-label="第 4 天 11/06 的詳細行程">
+  <div class="day-panel"><article class="card day-main"><div class="day-intro" style="background:#DDECF2"><div><span class="pill">DAY 04 / 11/06</span><h3>小樽玻璃店與湖畔星光</h3><p>運河旁的老房子、音樂盒，以及洞爺湖的溫泉夜晚。</p><div class="day-count">✿ 本日 6 個行程節點・依旅行社順序排列</div></div><div class="day-art"><svg viewBox="0 0 260 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M0 131q52-15 112 4 63 22 148-1v38H0Z" fill="#A8D3E6"/><path d="M26 56h87v78H26Z" fill="#F2A497"/><path d="M16 56 67 28l55 28Z" fill="#F6D27A"/><path d="M39 74h21v25H39zm38 0h21v25H77z" fill="#FFFCF6"/><path d="M160 45h69v85h-69z" fill="#B9DAA5"/><path d="M151 45 194 21l44 24Z" fill="#F6D27A"/><circle cx="195" cy="75" r="18" fill="#FFFCF6"/><path d="M195 62v14l9 5" fill="none"/><path d="M173 113h45" fill="none"/></g></svg></div></div>
+    <ol class="timeline"><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">01</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 1 站</span><span class="chip kind">團體車輛</span><span class="chip must">✦ 必去</span></div><h4>前田森林公園</h4><p>公園有筆直的長運河與楊樹大道，沿途欣賞園景與秋色。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%89%8D%E7%94%B0%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92%20%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 前田森林公園">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">02</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">行程第 2 站</span><span class="chip kind">車窗觀賞</span></div><h4>小樽運河（車窗觀賞）</h4><p>按照說明會資料，本項目為車窗觀賞，並非安排下車走訪運河。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E6%A8%BD%E9%81%8B%E6%B2%B3" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 小樽運河（車窗觀賞）">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">03</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">自由散策</span><span class="chip kind">散步</span><span class="chip must">✦ 必去</span></div><h4>小樽・北一硝子館</h4><p>在小樽自由散策時間內逛玻璃工藝店，欣賞各式玻璃器皿、燈飾與飾品。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E6%A8%BD%20%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%20%E4%B8%89%E5%8F%B7%E9%A4%A8" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 小樽・北一硝子館">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">04</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">自由散策</span><span class="chip kind">散步</span></div><h4>小樽音樂盒博物館</h4><p>欣賞懷舊音樂盒與古典蒸氣鐘；屬於小樽自由散策路線。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E6%A8%BD%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB%E5%A0%82%20%E6%9C%AC%E9%A4%A8" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 小樽音樂盒博物館">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">05</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 5 站</span><span class="chip kind">團體車輛</span></div><h4>名水公園（京極吹出公園）</h4><p>走訪羊蹄山麓的天然湧泉公園，欣賞泉水與園景。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BA%AC%E6%A5%B5%E3%81%B5%E3%81%8D%E3%81%A0%E3%81%97%E5%85%AC%E5%9C%92" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 名水公園（京極吹出公園）">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">06</div><div class="timeline-text"><div class="timeline-chips"><span class="chip clock">當晚</span><span class="chip kind">住宿</span></div><h4>入住洞爺湖 SUN PALACE</h4><p>在湖畔泡溫泉；煙火是否施放尚待確認。</p></div></li></ol>
+  </article><aside class="day-side">
+    <div class="card side-card"><div class="side-head">🍡 今日三餐</div><div class="side-body"><div class="meal-row"><b>早</b><span>飯店內享用</span></div><div class="meal-row"><b>午</b><span>小樽海鮮壽司＋小火鍋御膳</span></div><div class="meal-row"><b>晚</b><span>飯店和洋自助餐</span></div></div></div>
+    <div class="card side-card"><div class="side-head blue">☾ 今晚落腳處</div><div class="side-body"><p class="lodging-short">洞爺湖 SUN PALACE</p><a class="more-link" href="#hotels">查看住宿地址與電話 ↗</a></div></div>
+    <div class="card side-card"><div class="side-head pink">✿ 當天小筆記</div><div class="side-body"><ul class="attention-list"><li>小樽運河為「車窗觀賞」，不是正式下車停留。</li><li>行程贈送寶可夢杯，款式由導遊現場安排。</li><li>原資料提及洞爺湖煙火，11/06 是否舉辦請再次確認。</li></ul></div></div>
+  </aside></div>
+ </section><section class="day-sheet" id="panel-day-5" aria-label="第 5 天 11/07 的詳細行程">
+  <div class="day-panel"><article class="card day-main"><div class="day-intro" style="background:#DFF0E1"><div><span class="pill">DAY 05 / 11/07</span><h3>湖上最後一頁，帶著回憶回家</h3><p>乘船看大沼湖與駒之岳，和北海道說下次見。</p><div class="day-count">✿ 本日 5 個行程節點・依旅行社順序排列</div></div><div class="day-art"><svg viewBox="0 0 260 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="217" cy="35" r="22" fill="#F6D27A"/><path d="M-5 104 53 59l32 27 50-63 55 71 43-27 31 36v68H-5Z" fill="#B9DAA5"/><path d="m112 48 23-25 28 36-23-8-12 8Z" fill="#FFFCF6"/><path d="M-5 118q66-11 124 1t147-2v56H-5Z" fill="#A8D3E6"/><path d="M64 127h111l-24 25H83Z" fill="#FFFCF6"/><path d="M114 127V82l36 45Z" fill="#F2A497"/><path d="M114 82v45" fill="none"/><path d="m13 150 30 3m156-8 33 4" fill="none"/></g></svg></div></div>
+    <ol class="timeline"><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">01</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">行程第 1 站</span><span class="chip kind">團體車輛</span><span class="chip must">✦ 必去</span></div><h4>大沼國定公園</h4><p>湖畔散策，以駒之岳為背景欣賞秋景。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A7%E6%B2%BC%E5%9B%BD%E5%AE%9A%E5%85%AC%E5%9C%92%20%E5%8C%97%E6%B5%B7%E9%81%93" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 大沼國定公園">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">02</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">約 30 分鐘</span><span class="chip kind">遊覽船</span><span class="chip must">✦ 必去</span></div><h4>大沼湖環湖遊覽船</h4><p>搭船欣賞湖面、小島與周圍山巒。</p><a class="stop-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A7%E6%B2%BC%E5%90%88%E5%90%8C%E9%81%8A%E8%88%B9" target="_blank" rel="noopener noreferrer" aria-label="在地圖中搜尋 大沼湖環湖遊覽船">↗ 地圖位置</a></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">03</div><div class="timeline-text"><div class="timeline-chips"><span class="chip travel">返程</span><span class="chip kind">團體車輛</span></div><h4>前往函館機場</h4><p>辦理返台的報到與出境手續。</p></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">04</div><div class="timeline-text"><div class="timeline-chips"><span class="chip clock">15:30</span><span class="chip kind">飛機</span></div><h4>長榮航空 BR137 起飛</h4><p>從函館出發，飛往台灣桃園。</p></div></li><li class="timeline-item"><div class="timeline-marker" aria-hidden="true">05</div><div class="timeline-text"><div class="timeline-chips"><span class="chip kind">18:55</span><span class="chip kind">抵達</span></div><h4>抵達桃園國際機場</h4><p>帶著五天的秋日回憶回家。</p></div></li></ol>
+  </article><aside class="day-side">
+    <div class="card side-card"><div class="side-head">🍡 今日三餐</div><div class="side-body"><div class="meal-row"><b>早</b><span>飯店內享用</span></div><div class="meal-row"><b>午</b><span>大沼陶板燒御膳</span></div><div class="meal-row"><b>晚</b><span>機上精緻套餐</span></div></div></div>
+    <div class="card side-card"><div class="side-head blue">☾ 今晚落腳處</div><div class="side-body"><p class="lodging-short">回到溫暖的家 ♡</p><p>預定當日返抵台灣。</p></div></div>
+    <div class="card side-card"><div class="side-head pink">✿ 當天小筆記</div><div class="side-body"><ul class="attention-list"><li>大沼公園環湖遊覽船約 30 分鐘。</li><li>回程班機 BR137，函館 15:30 起飛、桃園 18:55 抵達（各為當地時間）。</li></ul></div></div>
+  </aside></div>
+ </section></div></div>
+      <p class="day-foot">✿ 旅行團現場可能因交通、天氣或活動狀況調整順序。</p>
+    </section>
+
+    <section class="section wrap" id="checklist" aria-labelledby="checklist-title">
+      <div class="section-head"><div><p class="eyebrow">03 · PACK WITH LOVE</p><h2 id="checklist-title">出發前的小小待辦 ✓</h2></div><p class="section-intro muted">打勾後會自動保存在這台裝置的瀏覽器裡，重新開啟也不用重做。</p></div>
+      <div class="check-layout">
+        <div class="card check-card">
+          <div class="check-header"><h3>我的行李清單</h3><button type="button" class="reset-button" id="reset-checklist">重新勾選 ↺</button></div>
+          <div class="progress-label"><span>打包進度</span><strong id="progress-number">0 / 16 件</strong></div>
+          <div class="progress-track" role="progressbar" aria-label="打包進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <div id="checklist-groups"><div class="check-group"><div class="check-group-name"><span class="small-circ" aria-hidden="true"></span>一定不能忘</div><div class="check-list"><label class="check-item"><input type="checkbox" data-check="passport"><span>護照（確認效期）</span></label><label class="check-item"><input type="checkbox" data-check="visa"><span>簽證／入境文件（如適用）</span></label><label class="check-item"><input type="checkbox" data-check="wallet"><span>日圓現金與信用卡</span></label><label class="check-item"><input type="checkbox" data-check="phone"><span>手機與充電線</span></label><label class="check-item"><input type="checkbox" data-check="insurance"><span>旅遊保險與重要資料</span></label><label class="check-item"><input type="checkbox" data-check="meet"><span>確認集合時間／航廈</span></label></div></div><div class="check-group"><div class="check-group-name"><span class="small-circ" aria-hidden="true"></span>暖暖旅行包</div><div class="check-list"><label class="check-item"><input type="checkbox" data-check="coat"><span>保暖防風外套</span></label><label class="check-item"><input type="checkbox" data-check="layer"><span>洋蔥式穿搭衣物</span></label><label class="check-item"><input type="checkbox" data-check="shoes"><span>好走的鞋子</span></label><label class="check-item"><input type="checkbox" data-check="umbrella"><span>雨具／折傘</span></label><label class="check-item"><input type="checkbox" data-check="medicine"><span>個人常備藥品</span></label><label class="check-item"><input type="checkbox" data-check="hygiene"><span>牙刷、牙膏等盥洗用品</span></label><label class="check-item"><input type="checkbox" data-check="power"><span>行動電源（隨身）</span></label><label class="check-item"><input type="checkbox" data-check="adapter"><span>轉接插頭（依設備需要）</span></label><label class="check-item"><input type="checkbox" data-check="camera"><span>相機／記憶卡</span></label><label class="check-item"><input type="checkbox" data-check="shopping"><span>行李預留伴手禮空間</span></label></div></div></div>
+          <div class="todo-adder">
+            <h4 class="todo-adder-title">✿ 想多帶什麼？自己加進清單</h4>
+            <form id="todo-form" class="todo-adder-form" autocomplete="off">
+              <input class="todo-input" id="new-todo" type="text" name="todo" maxlength="65" placeholder="例如：暖暖包、護唇膏…" aria-label="新增待辦事項" required>
+              <button class="todo-add-button" type="submit">＋ 新增</button>
+            </form>
+            <p class="todo-helper">輸入內容後按「新增」或鍵盤 Enter；可勾選完成，也可以刪除自己新增的項目。</p>
+            <p class="todo-feedback" id="todo-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+        <aside class="reminder-card">
+          <span class="pill">A LITTLE NOTE</span><h3>護照、機票，<br>還有秋天的心情 ♡</h3>
+          <p>北海道 11 月偏涼，記得分層穿搭，帶能防風的外套。行動電源要隨身攜帶、不能托運，並留意航空公司最新規範。</p><p><strong>證件提醒：</strong>說明會資料要求護照有效期在 2027/05/08 之後；自行攜帶證照者請提前 15 分鐘集合。</p>
+          <svg viewBox="0 0 330 230" xmlns="http://www.w3.org/2000/svg" aria-label="手繪行李箱、毛帽、相機與紅葉" role="img">
+            <g stroke="#3E3A39" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M70 72h142a20 20 0 0 1 20 20v89a20 20 0 0 1-20 20H70a20 20 0 0 1-20-20V92a20 20 0 0 1 20-20Z" fill="#F2A497"/><path d="M116 72V55a14 14 0 0 1 14-14h22a14 14 0 0 1 14 14v17" fill="none"/><path d="M86 96v81M196 96v81"/><rect x="50" y="116" width="182" height="17" rx="5" fill="#F6D27A"/><circle cx="90" cy="209" r="8" fill="#3E3A39"/><circle cx="191" cy="209" r="8" fill="#3E3A39"/>
+              <path d="M221 38q34-35 63 3l16 25H213Z" fill="#A8D3E6"/><path d="M214 65h87v17h-87z" fill="#FFFCF6"/><circle cx="254" cy="17" r="12" fill="#FFFCF6"/>
+              <rect x="235" y="137" width="73" height="50" rx="9" fill="#B9DAA5"/><circle cx="270" cy="162" r="16" fill="#FFFCF6"/><circle cx="270" cy="162" r="8" fill="#A8D3E6"/><path d="M248 137v-8h23v8" fill="#B9DAA5"/>
+              <path d="M39 59 27 43l12 4 2-18 10 13 14-8-3 18 16 5-19 7-9 15-12-10-17 5Z" fill="#F6D27A"/><path d="M52 56 59 79"/>
+            </g>
+          </svg>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section wrap" id="hotels" aria-labelledby="hotels-title">
+      <div class="section-head"><div><p class="eyebrow">04 · SLEEP TIGHT</p><h2 id="hotels-title">今晚住在哪裡？ ☾</h2></div><p class="section-intro muted">四個夜晚，四個不同的風景。點「地圖」可用 Google 地圖搜尋位置。</p></div>
+      <div class="hotel-grid" id="hotel-grid"><article class="card hotel-card"><div class="hotel-top"><div class="hotel-day">11/03<br>第 1 晚</div><div><h3 class="hotel-name">函館湯之川溫泉・海與燈</h3><div class="hotel-en">Hakodate Yunokawa Onsen Umi to Akari Hewitt Resort</div></div></div><div class="hotel-info"><div><b>地址</b><span>北海道函館市湯川町三丁目9番20号</span></div><div><b>電話</b><span>0138-57-5390</span></div></div><div class="hotel-actions"><a class="button-link" href="https://www.google.com/maps/search/?api=1&amp;query=Hakodate%20Yunokawa%20Onsen%20Umi%20to%20Akari%20Hewitt%20Resort" target="_blank" rel="noopener noreferrer">↗ 地圖位置</a><a class="button-link" href="tel:0138575390">☎ 撥打電話</a></div></article><article class="card hotel-card"><div class="hotel-top"><div class="hotel-day">11/04<br>第 2 晚</div><div><h3 class="hotel-name">定山溪溫泉・鹿之湯</h3><div class="hotel-en">HOTEL SHIKANOYU</div></div></div><div class="hotel-info"><div><b>地址</b><span>北海道札幌市南区定山渓温泉西3丁目32</span></div><div><b>電話</b><span>00281-11-598-2311</span></div></div><div class="hotel-actions"><a class="button-link" href="https://www.google.com/maps/search/?api=1&amp;query=HOTEL%20SHIKANOYU%20Jozankei" target="_blank" rel="noopener noreferrer">↗ 地圖位置</a><a class="button-link" href="tel:00281115982311">☎ 撥打電話</a></div></article><article class="card hotel-card"><div class="hotel-top"><div class="hotel-day">11/05<br>第 3 晚</div><div><h3 class="hotel-name">札幌 STREAM 飯店</h3><div class="hotel-en">SAPPORO STREAM HOTEL</div></div></div><div class="hotel-info"><div><b>地址</b><span>北海道札幌市中央区南4条西4丁目1番1</span></div><div><b>電話</b><span>011-206-1099</span></div></div><div class="hotel-actions"><a class="button-link" href="https://www.google.com/maps/search/?api=1&amp;query=SAPPORO%20STREAM%20HOTEL" target="_blank" rel="noopener noreferrer">↗ 地圖位置</a><a class="button-link" href="tel:0112061099">☎ 撥打電話</a></div></article><article class="card hotel-card"><div class="hotel-top"><div class="hotel-day">11/06<br>第 4 晚</div><div><h3 class="hotel-name">洞爺湖 SUN PALACE</h3><div class="hotel-en">Toya Sun Palace Resort &amp; Spa</div></div></div><div class="hotel-info"><div><b>地址</b><span>7-1 Toyakoonsen, Sobetsu-cho, Usu-gun, Hokkaido 049-5731, Japan</span></div><div><b>電話</b><span>+81-142-75-2444</span></div></div><div class="hotel-actions"><a class="button-link" href="https://www.google.com/maps/search/?api=1&amp;query=Toya%20Sun%20Palace%20Resort%20%26%20Spa" target="_blank" rel="noopener noreferrer">↗ 地圖位置</a><a class="button-link" href="tel:+81142752444">☎ 撥打電話</a></div></article></div>
+    </section>
+
+    <section class="section wrap" id="notes" aria-labelledby="notes-title">
+      <div class="section-head"><div><p class="eyebrow">05 · TINY REMINDERS</p><h2 id="notes-title">口袋裡的旅途提醒</h2></div></div>
+      <div class="notice-grid">
+        <article class="notice-card"><div class="notice-icon">🧳</div><h3>行李 & 行動電源</h3><p>國際段托運 1 件、每件 23 公斤。說明會資料列手提行李參考上限為 7 公斤。行動電源請隨身攜帶、勿托運，機上禁止使用；以最新航空公司規範為準。</p></article>
+        <article class="notice-card"><div class="notice-icon">🍁</div><h3>楓葉 & 季節活動</h3><p>楓況受天候影響，無法保證。行程資料所列「定山溪自然彩燈節」註明 10/31 結束；11/04 是否仍有活動，以及 11/06 洞爺湖煙火是否施放，請向旅行社再次確認。</p></article>
+        <article class="notice-card"><div class="notice-icon">🚠</div><h3>函館山交通</h3><p>資料註明函館山纜車於 10/20—11/08 整備停駛期間可能改由其他交通工具上下山；實際以領隊安排及當天狀況為準。</p></article>
+      </div>
+      <div class="contact">
+        <div><h3>旅途中需要幫忙？</h3><p>領隊：雷于震 · 團號 JHBBRX261103A · 導遊／領隊／司機服務費：每人共 NT$1,500（5 日）</p></div>
+        <div class="contact-links"><a href="tel:0932235699">台灣聯絡 0932-235-699</a><a href="tel:08039919988">當地聯絡 08039919988</a><a href="tel:80008850885">急難救助 800-0885-0885</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span class="footer-leaf">✿ 🍁 ✿</span><strong>北海道，秋天見。</strong><div>Made for a little Hokkaido adventure · 2026.11.03—11.07</div><div>內容依「1103 北海道說明會資料」整理，請以旅行社最終通知為準。</div></footer>
+
+  <script>
+    'use strict';
+    const INK = '#3E3A39';
+    const escapeHTML = s => String(s).replace(/[&<>"']/g, ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    const checklist = [
+      {name:'一定不能忘',items:[['passport','護照（確認效期）'],['visa','簽證／入境文件（如適用）'],['wallet','日圓現金與信用卡'],['phone','手機與充電線'],['insurance','旅遊保險與重要資料'],['meet','確認集合時間／航廈']]},
+      {name:'暖暖旅行包',items:[['coat','保暖防風外套'],['layer','洋蔥式穿搭衣物'],['shoes','好走的鞋子'],['umbrella','雨具／折傘'],['medicine','個人常備藥品'],['hygiene','牙刷、牙膏等盥洗用品'],['power','行動電源（隨身）'],['adapter','轉接插頭（依設備需要）'],['camera','相機／記憶卡'],['shopping','行李預留伴手禮空間']]}
+    ];
+    // 沿用上一版的勾選儲存鍵，已有的勾選紀錄仍可讀取。
+    const storageKey='hokkaido-trip-checklist-v1';
+    const customStorageKey='hokkaido-trip-custom-todos-v1';
+    let checked={};
+    let personalTodos=[];
+    try {
+      const saved=JSON.parse(localStorage.getItem(storageKey)||'{}');
+      if (saved && typeof saved==='object' && !Array.isArray(saved)) checked=saved;
+    } catch (_) {}
+    try {
+      const saved=JSON.parse(localStorage.getItem(customStorageKey)||'[]');
+      if (Array.isArray(saved)) {
+        personalTodos=saved.filter(item=>item && typeof item.id==='string' && typeof item.label==='string')
+          .map(item=>({id:item.id, label:item.label.slice(0,65)})).slice(0,150);
+      }
+    } catch (_) {}
+
+    const checkGroupBox=document.getElementById('checklist-groups');
+    const todoForm=document.getElementById('todo-form');
+    const todoInput=document.getElementById('new-todo');
+    const todoFeedback=document.getElementById('todo-feedback');
+    let feedbackTimeout;
+
+    function persistChecked() {
+      try { localStorage.setItem(storageKey,JSON.stringify(checked)); return true; }
+      catch (_) { return false; }
+    }
+    function persistPersonalTodos() {
+      try { localStorage.setItem(customStorageKey,JSON.stringify(personalTodos)); return true; }
+      catch (_) { return false; }
+    }
+    function showTodoFeedback(message) {
+      todoFeedback.textContent=message;
+    }
+    function drawChecklist() {
+      const base=checklist.map(group=>`<div class="check-group"><div class="check-group-name"><span class="small-circ" aria-hidden="true"></span>${group.name}</div><div class="check-list">${group.items.map(([id,label])=>`<label class="check-item"><input type="checkbox" data-check="${id}" ${checked[id]?'checked':''}><span>${escapeHTML(label)}</span></label>`).join('')}</div></div>`).join('');
+      const mine=personalTodos.length ? personalTodos.map(item=>`<div class="custom-check-row"><label class="check-item"><input type="checkbox" data-check="${escapeHTML(item.id)}" ${checked[item.id]?'checked':''}><span>${escapeHTML(item.label)}</span></label><button type="button" class="custom-remove" data-remove-todo="${escapeHTML(item.id)}" aria-label="刪除 ${escapeHTML(item.label)}" title="刪除此待辦">×</button></div>`).join('') : '<p class="custom-empty">還沒有自己新增的事項。從下方輸入第一件小待辦吧 ♡</p>';
+      checkGroupBox.innerHTML=base+`<div class="check-group custom-check-group"><div class="check-group-name"><span class="small-circ" aria-hidden="true"></span>我的新增事項（${personalTodos.length}）</div><div class="check-list">${mine}</div></div>`;
+      updateProgress();
+    }
+    function updateProgress() {
+      const all=checklist.flatMap(group=>group.items.map(item=>item[0])).concat(personalTodos.map(item=>item.id));
+      const total=all.length;
+      const done=all.filter(id=>checked[id]).length;
+      const pct=total ? Math.round(done/total*100) : 0;
+      document.getElementById('progress-number').textContent=`${done} / ${total} 件`;
+      document.getElementById('progress-fill').style.width=`${pct}%`;
+      document.getElementById('progress-track').setAttribute('aria-valuenow',String(pct));
+    }
+    checkGroupBox.addEventListener('change',event=>{
+      const field=event.target;
+      if (!field.matches('[data-check]')) return;
+      checked[field.dataset.check]=field.checked;
+      if (!persistChecked()) showTodoFeedback('提醒：目前瀏覽器限制儲存，重新開啟後可能無法保留打勾紀錄。');
+      updateProgress();
+    });
+    checkGroupBox.addEventListener('click',event=>{
+      const remove=event.target.closest('[data-remove-todo]');
+      if (!remove) return;
+      const id=remove.dataset.removeTodo;
+      const index=personalTodos.findIndex(item=>item.id===id);
+      if (index<0) return;
+      const label=personalTodos[index].label;
+      personalTodos.splice(index,1);
+      delete checked[id];
+      const saved=persistPersonalTodos() && persistChecked();
+      drawChecklist();
+      showTodoFeedback(saved?`已刪除「${label}」。`:'已刪除此項目，但瀏覽器目前無法保存變更。');
+    });
+    todoForm.addEventListener('submit',event=>{
+      event.preventDefault();
+      const label=todoInput.value.replace(/\s+/g,' ').trim();
+      if (!label) { showTodoFeedback('先輸入想新增的待辦事項喔。'); todoInput.focus(); return; }
+      if (personalTodos.length>=150) { showTodoFeedback('目前最多可以自訂 150 個事項。'); return; }
+      const id='custom-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);
+      personalTodos.push({id,label});
+      const saved=persistPersonalTodos();
+      todoInput.value='';
+      drawChecklist();
+      showTodoFeedback(saved?'♡ 已加入「我的新增事項」！':'已加入清單，但瀏覽器目前無法保存，請使用 Safari／Chrome 開啟。');
+      todoInput.focus();
+    });
+    document.getElementById('reset-checklist').addEventListener('click',()=>{
+      if (!window.confirm('要清除全部打勾的項目，重新整理行李嗎？（自己新增的項目會保留）')) return;
+      checked={};
+      if (!persistChecked()) showTodoFeedback('打勾已清除，但瀏覽器可能無法記住變更。');
+      else showTodoFeedback('打勾已清除，新增的事項都還在 ♡');
+      drawChecklist();
+    });
+    drawChecklist();
+  </script>
+</body>
+</html>
